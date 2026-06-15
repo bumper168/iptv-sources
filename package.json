@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development tsup --watch",
     "build": "tsup",
-    "build:static": "tsx src/index.ts",
+    "build:static": "tsx src/index.ts && npm run static && rm -rf epg",
     "postbuild:static": "npm run static",
     "m3u": "node ./dist/index.js",
     "postm3u": "npm run static",
