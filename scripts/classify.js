@@ -1,4 +1,4 @@
-// scripts/classify.js - 修改输出目录为项目根目录
+// scripts/classify.js - 输出到 m3u 子目录
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -9,30 +9,17 @@ const __dirname = path.dirname(__filename);
 (async () => {
     console.log('[分类脚本] 开始执行...');
 
-    // 查找 all.m3u（优先在 m3u 子目录，其次在根目录）
-    const possiblePaths = [
-        path.join(__dirname, '../m3u/all.m3u'),
-        path.join(__dirname, '../all.m3u'),
-    ];
-    let inputFile = null;
-    for (const p of possiblePaths) {
-        if (fs.existsSync(p)) {
-            inputFile = p;
-            break;
-        }
-    }
-
-    if (!inputFile) {
-        console.error('[分类脚本] ❌ 错误：找不到 all.m3u 文件！尝试过的路径：', possiblePaths);
+    const inputFile = path.join(__dirname, '../m3u/all.m3u');
+    if (!fs.existsSync(inputFile)) {
+        console.error('[分类脚本] ❌ 错误：找不到 all.m3u 文件！路径：', inputFile);
         process.exit(1);
     }
     console.log(`[分类脚本] ✅ 找到 all.m3u：${inputFile}`);
 
-    // 关键修改：输出目录改为项目根目录
-    const outputDir = path.join(__dirname, '..');
+    // 关键修改：输出目录改为 m3u 子目录
+    const outputDir = path.join(__dirname, '../m3u');
     console.log(`[分类脚本] 输出目录：${outputDir}`);
 
-    // 分类关键词（英文文件名）
     const categories = {
         'yangshi.m3u': ['cctv', '央视'],
         'weishi.m3u': ['卫视', '湖南卫视', '浙江卫视', '江苏卫视', '东方卫视', '北京卫视', '深圳卫视', '广东卫视', '天津卫视', '山东卫视', '安徽卫视', '辽宁卫视', '黑龙江卫视', '河北卫视', '河南卫视', '湖北卫视', '江西卫视', '广西卫视', '重庆卫视', '四川卫视', '贵州卫视', '云南卫视', '陕西卫视', '山西卫视', '内蒙古卫视', '新疆卫视', '西藏卫视', '青海卫视', '宁夏卫视', '甘肃卫视'],
@@ -41,12 +28,10 @@ const __dirname = path.dirname(__filename);
         'guowai.m3u': ['cnn', 'bbc', 'nhk', 'kbs', 'abc', 'cbs', 'nbc', 'fox', 'sky', 'discovery', 'national geographic', 'hbo', 'espn', 'euronews', 'france', 'germany', 'russia', 'al jazeera', 'cgtn']
     };
 
-    // 确保输出目录存在
     if (!fs.existsSync(outputDir)) {
         fs.mkdirSync(outputDir, { recursive: true });
     }
 
-    // 初始化写入流
     const streams = {};
     for (const cat of Object.keys(categories)) {
         const fullPath = path.join(outputDir, cat);
@@ -58,8 +43,7 @@ const __dirname = path.dirname(__filename);
     const content = fs.readFileSync(inputFile, 'utf-8');
     const lines = content.split(/\r?\n/);
     let currentInfo = null;
-    let processedCount = 0;
-    let matchedCount = 0;
+    let processedCount = 0, matchedCount = 0;
 
     for (let line of lines) {
         line = line.trim();
@@ -83,7 +67,6 @@ const __dirname = path.dirname(__filename);
         }
     }
 
-    // 关闭所有流并等待写入完成
     const finishPromises = Object.values(streams).map(stream => {
         return new Promise((resolve) => {
             stream.on('finish', resolve);
