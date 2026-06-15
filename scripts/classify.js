@@ -1,12 +1,32 @@
-// scripts/classify.js
+// scripts/classify.js - 增强版，带详细日志
 const fs = require('fs');
 const path = require('path');
 
-// 输入文件：项目构建后生成的 all.m3u 的路径（相对于项目根目录）
-const inputFile = path.join(__dirname, '../m3u/all.m3u');
-const outputDir = path.join(__dirname, '../m3u');
+console.log('[分类脚本] 开始执行...');
 
-// 分类规则（关键词匹配，不区分大小写，因为后面会统一小写比较）
+// 尝试多个可能的 all.m3u 路径
+const possiblePaths = [
+    path.join(__dirname, '../all.m3u'),      // 项目根目录
+    path.join(__dirname, '../m3u/all.m3u'), // m3u 子目录
+];
+let inputFile = null;
+for (const p of possiblePaths) {
+    if (fs.existsSync(p)) {
+        inputFile = p;
+        break;
+    }
+}
+
+if (!inputFile) {
+    console.error('[分类脚本] ❌ 错误：找不到 all.m3u 文件！尝试过的路径：', possiblePaths);
+    process.exit(1); // 退出并标记失败
+}
+console.log(`[分类脚本] ✅ 找到 all.m3u：${inputFile}`);
+
+const outputDir = path.join(__dirname, '..'); // 输出到项目根目录
+console.log(`[分类脚本] 输出目录：${outputDir}`);
+
+// 分类关键词
 const categories = {
     '央视.m3u': ['cctv', '央视'],
     '卫视.m3u': ['卫视', '湖南卫视', '浙江卫视', '江苏卫视', '东方卫视', '北京卫视', '深圳卫视', '广东卫视', '天津卫视', '山东卫视', '安徽卫视', '辽宁卫视', '黑龙江卫视', '河北卫视', '河南卫视', '湖北卫视', '江西卫视', '广西卫视', '重庆卫视', '四川卫视', '贵州卫视', '云南卫视', '陕西卫视', '山西卫视', '内蒙古卫视', '新疆卫视', '西藏卫视', '青海卫视', '宁夏卫视', '甘肃卫视'],
@@ -15,63 +35,56 @@ const categories = {
     '国外.m3u': ['cnn', 'bbc', 'nhk', 'kbs', 'abc', 'cbs', 'nbc', 'fox', 'sky', 'discovery', 'national geographic', 'hbo', 'espn', 'euronews', 'france', 'germany', 'russia', 'al jazeera', 'cgtn']
 };
 
-// 初始化输出流
+// 确保输出目录存在
+if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
+}
+
+// 初始化写入流
 const streams = {};
 for (let cat in categories) {
     const fullPath = path.join(outputDir, cat);
     streams[cat] = fs.createWriteStream(fullPath);
-    streams[cat].write('#EXTM3U\n'); // M3U 文件头部
-}
-
-// 读取 all.m3u 文件
-if (!fs.existsSync(inputFile)) {
-    console.error('错误：找不到 all.m3u 文件，请确保先运行构建命令');
-    process.exit(1);
+    streams[cat].write('#EXTM3U\n');
+    console.log(`[分类脚本] 创建文件：${cat}`);
 }
 
 const content = fs.readFileSync(inputFile, 'utf-8');
 const lines = content.split(/\r?\n/);
+let currentInfo = null;
+let processedCount = 0;
+let matchedCount = 0;
 
-let currentEntry = null; // 存储当前频道的完整两行（信息行+URL行）
-
-for (let i = 0; i < lines.length; i++) {
-    const line = lines[i].trim();
+for (let line of lines) {
+    line = line.trim();
     if (line === '') continue;
-
-    // 以 #EXTINF 开头的行是频道信息行
     if (line.startsWith('#EXTINF')) {
-        currentEntry = { info: line, url: null };
-    } 
-    // 不是 # 开头且不是空行，且前面有 info 行，那就是 URL 行
-    else if (!line.startsWith('#') && currentEntry && currentEntry.info) {
-        currentEntry.url = line;
-        
-        // 判断这个频道属于哪个分类
+        currentInfo = line;
+    } else if (!line.startsWith('#') && currentInfo) {
+        processedCount++;
+        const combined = (currentInfo + ' ' + line).toLowerCase();
         let matched = false;
-        const combinedText = (currentEntry.info + ' ' + currentEntry.url).toLowerCase();
-        
         for (let cat in categories) {
-            const keywords = categories[cat];
-            if (keywords.some(kw => combinedText.includes(kw.toLowerCase()))) {
-                // 写入对应的分类文件
-                streams[cat].write(currentEntry.info + '\n');
-                streams[cat].write(currentEntry.url + '\n');
+            if (categories[cat].some(kw => combined.includes(kw.toLowerCase()))) {
+                streams[cat].write(currentInfo + '\n');
+                streams[cat].write(line + '\n');
                 matched = true;
+                matchedCount++;
                 break;
             }
         }
-        
-        // 如果没有任何分类匹配，可以写入一个“其他.m3u”（可选，这里暂时忽略）
-        currentEntry = null;
+        currentInfo = null;
     }
 }
 
-// 关闭所有文件流
+// 关闭所有流
 for (let cat in streams) {
     streams[cat].end();
 }
 
-console.log('分类完成！已生成以下文件：');
+console.log(`[分类脚本] 处理完成！总频道数：${processedCount}，匹配分类数：${matchedCount}`);
 for (let cat in categories) {
-    console.log(` - ${cat}`);
+    const stat = fs.statSync(path.join(outputDir, cat));
+    console.log(`   ${cat} (${stat.size} bytes)`);
 }
+console.log('[分类脚本] 脚本正常结束');
