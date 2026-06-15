@@ -1,6 +1,11 @@
-// scripts/classify.js - 增强版，带详细日志
-const fs = require('fs');
-const path = require('path');
+// scripts/classify.js - 增强版，带详细日志（ES Module 版本）
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+// 获取当前文件的目录名（替代 CommonJS 的 __dirname）
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 console.log('[分类脚本] 开始执行...');
 
