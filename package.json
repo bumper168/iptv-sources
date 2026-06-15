@@ -13,7 +13,7 @@
     "postbuild:static": "npm run static",
     "m3u": "node ./dist/index.js",
     "postm3u": "npm run static",
-    "static": "cp -r public/* m3u/ && rm -f m3u/epg/epg_pw.xml"
+    "static": "cp -r public/* m3u/ && rm -f m3u/epg/epg_pw.xml",
     "serve": "node ./dist/serve.js",
     "serve:dev": "nodemon ./dist/serve.js",
     "release": "node ./scripts/release.js",
