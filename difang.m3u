@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="鹤壁新闻综合 (480p) [Not 24/7]" tvg-logo="https://i.imgur.com/Osw5yRW.png" group-title="地方频道",鹤壁新闻综合 (480p) [Not 24/7]
+http://pili-live-hls.hebitv.com/hebi/hebi.m3u8
+#EXTINF:-1 tvg-name="白城新闻综合 [Geo-blocked]" tvg-logo="https://www.tvchinese.net/uploads/tv/baicheng.jpg" group-title="地方频道",白城新闻综合 [Geo-blocked]
+https://stream2.jlntv.cn/baicheng1/sd/live.m3u8
