@@ -1,11 +1,3 @@
-node_modules
-.DS_Store
-dist
-
-test_*
-m3u
-back
-
-.env
-config
-coverage
+output/
+__pycache__/
+*.pyc
