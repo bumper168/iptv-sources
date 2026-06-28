@@ -1,6 +1,6 @@
 #EXTM3U
 
-# 央视频道（官方源）
+# 央视频道（官方源）- 17个
 #EXTINF:-1 tvg-name="CCTV-1 综合" tvg-logo="" group-title="央视频道",CCTV-1 综合
 https://ldncctvwbcdbyte.volcfcdn.com/ldncctvwbcd/cdrmldcctv1_1/index.m3u8?BR=td
 #EXTINF:-1 tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视频道",CCTV-2 财经
@@ -38,11 +38,11 @@ https://ldocctvwbcdbyte.volcfcdn.com/ldocctvwbcd/cdrmldcctv16_1/index.m3u8?wsApp
 #EXTINF:-1 tvg-name="CCTV-17 农业农村" tvg-logo="" group-title="央视频道",CCTV-17 农业农村
 https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv17_1/index.m3u8?wsApp=HLS
 
-# 芒果TV（湖南台）
+# 芒果TV（湖南台）- 8个
 #EXTINF:-1 tvg-name="湖南经视" tvg-logo="" group-title="芒果TV",湖南经视
 https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmY2RuZXhfaWQ9YWxfcGhvbmUzJnM9MDljZGEwMjIxYTJhZjYwMzQzN2VhMDQzOTU3OTZkN2YmYXM9MCZfY2FyQ29kZT0wJnVpcD0yNy40Mi44Mi44NSZtYWNpZD00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNocz0mdXVpZD04ZTUxNTgzMjI2ZjNkYTNkNDM4NDAwYzlhM2VlYjFlMy0xYjJhNTI1NSZ2PTImbmR2PXBjX3dlYi1pbWdvdHYtcGNoNS0xLjIuMyZ1aWQ9JmRlZj0xJmVzPTE3ODI2MTIwMzE,/HNJSMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
 #EXTINF:-1 tvg-name="湖南娱乐" tvg-logo="" group-title="芒果TV",湖南娱乐
-https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmY2RuZXhfaWQ9YWxfcGhvbmUzJnM9ZDA0YTFmZjY2YzlhMmUwOTZmODhhODJlMWM1MTc1YzEmYXM9MCZfY2FyQ29kZT0wJnVpcD0yNy40Mi44Mi44NSZtYWNpZD00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNocz0mdXVpZD0xNjg5YmE2OTQwN2RmZjUxZDg2MDFhZWUwZDExMjM5MS0xYjJhNTI1NSZ2PTImbmR2PXBjX3dlYi1pbWdvdHYtcGNoNS0xLjIuMyZ1aWQ9JmRlZj0xJmVzPTE3ODI2MTIwMzY,/HNYLMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
+https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmY2RuZXhfaWQ9YWxfcGhvbmUzJnM9ZDA0YTFmZjY2YzlhMmUwOTZmODhhODJlMWMxNTE3NWMxJmFzPTAmX2NhckNvZGU9MCZ1aXA9MjcuNDIuODIuODUmbWFjaWQ9NDBkNTAwMWItMzI4NS00NzM4LWFkOTItMWI3YmM1MTU3NWU1JnFuaWQ9JnJhdXRoX2VuYWJsZT1vZmYmY2hzPSZ1dWlkPTE2ODliYTY5NDA3ZGZmNTFkODYwMWFlZTBkMTEyMzkxLTE4YjJhNTI1NSZ2PTImbmR2PXBjX3dlYi1pbWdvdHYtcGNoNS0xLjIuMyZ1aWQ9JmRlZj0xJmVzPTE3ODI2MTIwMzY,/HNYLMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
 #EXTINF:-1 tvg-name="湖南都市" tvg-logo="" group-title="芒果TV",湖南都市
 https://padal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MjcuNDIuODIuODUmbmRpPTQwZDUwMDFiLTMyODUtNDczOC1hZDkyLTFiN2JjNTE1NzVlNSZ0ZXJtPTQmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNkbmV4X2lkPWFsX3Bob25lMyZ1dWlkPTE1OGNhYzY0OTViZTllODhmNjdmYjZlOTNhYjU4NzE1LTFiMmE1MjU1JmVzPTE3ODI2MTIwNDImcz03ZmQ4YTk5YjZmMzFmZTU2M2EyMjQzNmMyNWY1Y2U1MiZ1aWQ9Jm5kdj1wY193ZWItaW1nb3R2LXBjaDUtMS4yLjMmdj0yJmFzPTAmX2NhckNvZGU9MA,,/HNDSMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
 #EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="" group-title="芒果TV",金鹰纪实
@@ -56,10 +56,14 @@ https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3M
 #EXTINF:-1 tvg-name="湖南爱晚" tvg-logo="" group-title="芒果TV",湖南爱晚
 https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmY2RuZXhfaWQ9YWxfcGhvbmUzJnM9NTM4NDIwZDgwMjFlMTAyMmY3MDQxMjkwYjE2NzFhZWYmYXM9MCZfY2FyQ29kZT0wJnVpcD0yNy40Mi44Mi44NSZtYWNpZD00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNocz0mdXVpZD0xN2JmZDA1ZGEyM2Q5ZTYwMzAxN2EwMGZhOTY3NDYzOS0xYjJhNTI1NSZ2PTImbmR2PXBjX3dlYi1pbWdvdHYtcGNoNS0xLjIuMyZ1aWQ9JmRlZj0xJmVzPTE3ODI2MTIwNjc,/HNGGMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
 
-# 浙江卫视（需要通过Playwright动态获取最新auth_key）
+# 省级卫视 - 6个
+#EXTINF:-1 tvg-name="东方卫视" tvg-logo="" group-title="卫视频道",东方卫视
+http://bp-resource-dfl.bestv.cn/148/3/video.m3u8
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="" group-title="卫视频道",浙江卫视
-https://zwebl02.cztv.com/live/channel01720Pnew.m3u8
-
-# 港台频道
-#EXTINF:-1 tvg-name="Dorcel HD" tvg-logo="" group-title="港台",Dorcel HD
-http://212.102.38.45/live/test_dorcel_hd_hevc/playlist.m3u8
+http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8
+#EXTINF:-1 tvg-name="河北卫视" tvg-logo="" group-title="卫视频道",河北卫视
+http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8
+#EXTINF:-1 tvg-name="东南卫视" tvg-logo="" group-title="卫视频道",东南卫视
+http://live.zohi.tv/video/s10001-fztv-3/index.m3u8
+#EXTINF:-1 tvg-name="黑龙江卫视" tvg-logo="" group-title="卫视频道",黑龙江卫视
+https://idclive.hljtv.com:4430/live/hljws_own.m3u8
