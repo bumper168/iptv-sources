@@ -1,0 +1,61 @@
+#EXTM3U
+
+# 央视频道（官方源）
+#EXTINF:-1 tvg-name="CCTV-1 综合" tvg-logo="" group-title="央视频道",CCTV-1 综合
+https://ldncctvwbcdbyte.volcfcdn.com/ldncctvwbcd/cdrmldcctv1_1/index.m3u8?BR=td
+#EXTINF:-1 tvg-name="CCTV-2 财经" tvg-logo="" group-title="央视频道",CCTV-2 财经
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv2_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-3 综艺" tvg-logo="" group-title="央视频道",CCTV-3 综艺
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv3_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-4 中文国际" tvg-logo="" group-title="央视频道",CCTV-4 中文国际
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv4_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-5 体育" tvg-logo="" group-title="央视频道",CCTV-5 体育
+https://ldocctvwbcdbyte.volcfcdn.com/ldocctvwbcd/cdrmldcctv5_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-5+ 体育赛事" tvg-logo="" group-title="央视频道",CCTV-5+ 体育赛事
+https://ldocctvwbcdbyte.volcfcdn.com/ldocctvwbcd/cdrmldcctv5plus_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-6 电影" tvg-logo="" group-title="央视频道",CCTV-6 电影
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv6_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-7 国防军事" tvg-logo="" group-title="央视频道",CCTV-7 国防军事
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv7_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-8 电视剧" tvg-logo="" group-title="央视频道",CCTV-8 电视剧
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv8_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-9 纪录" tvg-logo="" group-title="央视频道",CCTV-9 纪录
+https://ldncctvwbcdbyte.volcfcdn.com/ldncctvwbcd/cdrmldcctvjilu_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-10 科教" tvg-logo="" group-title="央视频道",CCTV-10 科教
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv10_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-11 戏曲" tvg-logo="" group-title="央视频道",CCTV-11 戏曲
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv11_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-12 社会与法" tvg-logo="" group-title="央视频道",CCTV-12 社会与法
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv12_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-13 新闻" tvg-logo="" group-title="央视频道",CCTV-13 新闻
+https://ldncctvwbcdbyte.volcfcdn.com/ldncctvwbcd/cdrmldcctv13_1/index.m3u8?BR=td
+#EXTINF:-1 tvg-name="CCTV-14 少儿" tvg-logo="" group-title="央视频道",CCTV-14 少儿
+https://ldncctvwbcdbyte.volcfcdn.com/ldncctvwbcd/cdrmldcctvchild_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-15 音乐" tvg-logo="" group-title="央视频道",CCTV-15 音乐
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv15_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-16 奥林匹克" tvg-logo="" group-title="央视频道",CCTV-16 奥林匹克
+https://ldocctvwbcdbyte.volcfcdn.com/ldocctvwbcd/cdrmldcctv16_1/index.m3u8?wsApp=HLS
+#EXTINF:-1 tvg-name="CCTV-17 农业农村" tvg-logo="" group-title="央视频道",CCTV-17 农业农村
+https://ldocctvwbcdcnc.v.wscdns.com/ldocctvwbcd/cdrmldcctv17_1/index.m3u8?wsApp=HLS
+
+# 芒果TV（湖南台）
+#EXTINF:-1 tvg-name="湖南经视" tvg-logo="" group-title="芒果TV",湖南经视
+https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmY2RuZXhfaWQ9YWxfcGhvbmUzJnM9MDljZGEwMjIxYTJhZjYwMzQzN2VhMDQzOTU3OTZkN2YmYXM9MCZfY2FyQ29kZT0wJnVpcD0yNy40Mi44Mi44NSZtYWNpZD00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNocz0mdXVpZD04ZTUxNTgzMjI2ZjNkYTNkNDM4NDAwYzlhM2VlYjFlMy0xYjJhNTI1NSZ2PTImbmR2PXBjX3dlYi1pbWdvdHYtcGNoNS0xLjIuMyZ1aWQ9JmRlZj0xJmVzPTE3ODI2MTIwMzE,/HNJSMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
+#EXTINF:-1 tvg-name="湖南娱乐" tvg-logo="" group-title="芒果TV",湖南娱乐
+https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmY2RuZXhfaWQ9YWxfcGhvbmUzJnM9ZDA0YTFmZjY2YzlhMmUwOTZmODhhODJlMWM1MTc1YzEmYXM9MCZfY2FyQ29kZT0wJnVpcD0yNy40Mi44Mi44NSZtYWNpZD00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNocz0mdXVpZD0xNjg5YmE2OTQwN2RmZjUxZDg2MDFhZWUwZDExMjM5MS0xYjJhNTI1NSZ2PTImbmR2PXBjX3dlYi1pbWdvdHYtcGNoNS0xLjIuMyZ1aWQ9JmRlZj0xJmVzPTE3ODI2MTIwMzY,/HNYLMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
+#EXTINF:-1 tvg-name="湖南都市" tvg-logo="" group-title="芒果TV",湖南都市
+https://padal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MjcuNDIuODIuODUmbmRpPTQwZDUwMDFiLTMyODUtNDczOC1hZDkyLTFiN2JjNTE1NzVlNSZ0ZXJtPTQmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNkbmV4X2lkPWFsX3Bob25lMyZ1dWlkPTE1OGNhYzY0OTViZTllODhmNjdmYjZlOTNhYjU4NzE1LTFiMmE1MjU1JmVzPTE3ODI2MTIwNDImcz03ZmQ4YTk5YjZmMzFmZTU2M2EyMjQzNmMyNWY1Y2U1MiZ1aWQ9Jm5kdj1wY193ZWItaW1nb3R2LXBjaDUtMS4yLjMmdj0yJmFzPTAmX2NhckNvZGU9MA,,/HNDSMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
+#EXTINF:-1 tvg-name="金鹰纪实" tvg-logo="" group-title="芒果TV",金鹰纪实
+https://padal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MjcuNDIuODIuODUmbmRpPTQwZDUwMDFiLTMyODUtNDczOC1hZDkyLTFiN2JjNTE1NzVlNSZ0ZXJtPTQmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNkbmV4X2lkPWFsX3Bob25lMyZ1dWlkPTk0NmQxYWZmMTI5MDRjYzJlODU4MWMzOTQ0YzdkMjkyLTFiMmE1MjU1JmVzPTE3ODI2MTIwNDcmcz1iMWRlNjc3MjQ2NTkyZDlmMmQ3YzI4ZDY0NjUwYWIwYSZ1aWQ9Jm5kdj1wY193ZWItaW1nb3R2LXBjaDUtMS4yLjMmdj0yJmFzPTAmX2NhckNvZGU9MA,,/JYJSMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
+#EXTINF:-1 tvg-name="金鹰卡通" tvg-logo="" group-title="芒果TV",金鹰卡通
+https://padal.qing.mgtv.com/nn_live/nn_x64/Y2hzPSZkZWY9MSZ1aXA9MjcuNDIuODIuODUmbmRpPTQwZDUwMDFiLTMyODUtNDczOC1hZDkyLTFiN2JjNTE1NzVlNSZ0ZXJtPTQmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNkbmV4X2lkPWFsX3Bob25lMyZ1dWlkPWYyNWZiZTFkNmQ3NWMxNDNmNDg0ZWZmMDU0MjYzNzk4LTFiMmE1MjU1JmVzPTE3ODI2MTIwNTImcz02MWRlOTA1MmZlMmIzYzFiOGQwNGVhZDJiOTVmZWU2ZiZ1aWQ9Jm5kdj1wY193ZWItaW1nb3R2LXBjaDUtMS4yLjMmdj0yJmFzPTAmX2NhckNvZGU9MA,,/JYKTMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
+#EXTINF:-1 tvg-name="湖南电影" tvg-logo="" group-title="芒果TV",湖南电影
+https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmY2RuZXhfaWQ9YWxfcGhvbmUzJnM9ZjZlMWMxZjYzN2ZlYTFjODgzNzcyNTFiNDUzMDFjMjkmYXM9MCZfY2FyQ29kZT0wJnVpcD0yNy40Mi44Mi44NSZtYWNpZD00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNocz0mdXVpZD0wYWJmN2ZmYjlmMDg1MTcwMGFmOWM0OTMxNTY3ZTM4OC0xYjJhNTI1NSZ2PTImbmR2PXBjX3dlYi1pbWdvdHYtcGNoNS0xLjIuMyZ1aWQ9JmRlZj0xJmVzPTE3ODI2MTIwNTc,/HNDYMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
+#EXTINF:-1 tvg-name="湖南电视剧" tvg-logo="" group-title="芒果TV",湖南电视剧
+https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmY2RuZXhfaWQ9YWxfcGhvbmUzJnM9ZmZiY2E0OTFkMzk3MzZmOTU1YjA3MjJiZWMzOTVjMDUmYXM9MCZfY2FyQ29kZT0wJnVpcD0yNy40Mi44Mi44NSZtYWNpZD00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNocz0mdXVpZD0yNjg5YjFmNDBiZTAwNzVkOTUyMmIwNzMwODdkYjAzZC0xYjJhNTI1NSZ2PTImbmR2PXBjX3dlYi1pbWdvdHYtcGNoNS0xLjIuMyZ1aWQ9JmRlZj0xJmVzPTE3ODI2MTIwNjI,/HNDSJMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
+#EXTINF:-1 tvg-name="湖南爱晚" tvg-logo="" group-title="芒果TV",湖南爱晚
+https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmY2RuZXhfaWQ9YWxfcGhvbmUzJnM9NTM4NDIwZDgwMjFlMTAyMmY3MDQxMjkwYjE2NzFhZWYmYXM9MCZfY2FyQ29kZT0wJnVpcD0yNy40Mi44Mi44NSZtYWNpZD00MGQ1MDAxYi0zMjg1LTQ3MzgtYWQ5Mi0xYjdiYzUxNTc1ZTUmcWlkPSZyYXV0aF9lbmFibGU9b2ZmJmNocz0mdXVpZD0xN2JmZDA1ZGEyM2Q5ZTYwMzAxN2EwMGZhOTY3NDYzOS0xYjJhNTI1NSZ2PTImbmR2PXBjX3dlYi1pbWdvdHYtcGNoNS0xLjIuMyZ1aWQ9JmRlZj0xJmVzPTE3ODI2MTIwNjc,/HNGGMPP360.m3u8?sftc=v6.8.16ds1_vtp2&ftc=webP1
+
+# 浙江卫视（需要通过Playwright动态获取最新auth_key）
+#EXTINF:-1 tvg-name="浙江卫视" tvg-logo="" group-title="卫视频道",浙江卫视
+https://zwebl02.cztv.com/live/channel01720Pnew.m3u8
