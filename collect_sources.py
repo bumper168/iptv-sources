@@ -18,9 +18,10 @@ from urllib.parse import urlparse
 UPSTREAM_SOURCES = [
     # iptv-org 开源项目（国内可访问）
     "https://iptv-org.github.io/iptv/countries/cn.m3u",
-    # 可选：添加更多上游源
-    # "https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u8",
-    # "https://另一个源地址/xxx.m3u",
+    # 国内常用源
+    "https://gh-proxy.com/raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
+    "https://gh-proxy.com/raw.githubusercontent.com/billy21/Tvlist-awesome-m3u-m3u8/master/m3u/%E5%9B%BD%E5%86%85.m3u",
+    "https://gh-proxy.com/raw.githubusercontent.com/hujingguang/ChinaIPTV/main/cnTV_AutoUpdate.m3u8",
 ]
 
 # ========== 额外的上游源（用于分类和补充 ==========
