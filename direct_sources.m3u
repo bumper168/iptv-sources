@@ -59,3 +59,7 @@ https://padal.qing.mgtv.com/nn_live/nn_x64/dGVybT00Jm5kaT00MGQ1MDAxYi0zMjg1LTQ3M
 # 浙江卫视（需要通过Playwright动态获取最新auth_key）
 #EXTINF:-1 tvg-name="浙江卫视" tvg-logo="" group-title="卫视频道",浙江卫视
 https://zwebl02.cztv.com/live/channel01720Pnew.m3u8
+
+# 港台频道
+#EXTINF:-1 tvg-name="Dorcel HD" tvg-logo="" group-title="港台",Dorcel HD
+http://212.102.38.45/live/test_dorcel_hd_hevc/playlist.m3u8
