@@ -1,16 +1,5 @@
 #EXTM3U
-#EXTINF:-1,CGNTV Chinese (1080p)
-https://d3e05csss9c272.cloudfront.net/out/v1/f0bf71c57581470fb9379f603e8f5d83/CGNWebLiveCN.m3u8
-
-#EXTINF:-1,Dali TV (大立電視台) (720p)
-http://www.dalitv.com.tw:4568/live/dali/index.m3u8
-
-#EXTINF:-1,Pet Club TV (1080p)
-https://petclub-samsungaus.amagi.tv/playlist.m3u8
-
-#EXTINF:-1,RTHK TV 31 (港台電視31) (1080p) [Geo-blocked]
-https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
-
-#EXTINF:-1,TVBS Asia (1080p)
+#EXTINF:-1 tvg-name="TVBS-Asia" tvg-logo="https://i.imgur.com/4S1rkhm.png" group-title="港台频道",TVBS-Asia
 http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
-
+#EXTINF:-1 tvg-name="TVB明珠台" tvg-logo="" group-title="港台频道",TVB明珠台
+http://m.567it.com/Pearl.m3u8
