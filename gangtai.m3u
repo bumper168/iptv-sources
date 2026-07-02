@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="TVB明珠台" tvg-logo="" group-title="港台频道",TVB明珠台
-http://m.567it.com/Pearl.m3u8
 #EXTINF:-1 tvg-name="TVBS-Asia" tvg-logo="https://i.imgur.com/4S1rkhm.png" group-title="港台频道",TVBS-Asia
 http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
+#EXTINF:-1 tvg-name="TVB明珠台" tvg-logo="" group-title="港台频道",TVB明珠台
+http://m.567it.com/Pearl.m3u8
