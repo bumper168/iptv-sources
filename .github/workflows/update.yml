@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: 检出代码
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: 设置 Python
         uses: actions/setup-python@v5
@@ -21,49 +19,10 @@ jobs:
 
       - name: 安装依赖
         run: |
-          pip install -r requirements.txt
-          playwright install chromium
+          pip install requests
 
-      - name: 抓取芒果TV直播源
+      - name: 运行直播源更新脚本
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python mgtv_crawler.py
-
-      - name: 抓取浙江卫视直播源
-        run: |
-          python zhejiang_crawler.py
-
-      - name: 抓取省级卫视直播源
-        run: |
-          python province_crawler.py
-
-      - name: 验证央视频道源
-        run: |
-          python cctv_crawler.py
-
-      - name: 运行收集脚本
-        run: |
-          python collect_sources.py
-
-      - name: 整合精选源
-        run: |
-          python merge_sources.py
-
-      - name: 生成更新文件
-        run: |
-          # 把 output 目录下的 .m3u 文件复制到根目录
-          cp output/yangshi.m3u yangshi.m3u 2>/dev/null || echo "no yangshi"
-          cp output/weishi.m3u weishi.m3u 2>/dev/null || echo "no weishi"
-          cp output/difang.m3u difang.m3u 2>/dev/null || echo "no difang"
-          cp output/gangtai.m3u gangtai.m3u 2>/dev/null || echo "no gangtai"
-          cp output/guowai.m3u guowai.m3u 2>/dev/null || echo "no guowai"
-          cp output/mgtv.m3u mgtv.m3u 2>/dev/null || echo "no mgtv"
-          cp output/zhejiang.m3u zhejiang.m3u 2>/dev/null || echo "no zhejiang"
-          cp province.m3u province.m3u 2>/dev/null || echo "no province"
-          cp output/all.m3u all.m3u 2>/dev/null || echo "no all"
-
-      - name: 提交更新
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add *.m3u
-          git diff --quiet && git diff --staged --quiet || (git commit -m "自动更新直播源 $(date +%Y-%m-%d)" && git push)
+          python update_sources.py
